@@ -1,6 +1,6 @@
 <?php
 
-$db = mysqli_connect("localhost","helpdesk","testing101","hdupdates");
+$db = mysqli_connect("localhost","mysql_username","mysql_psswd","mysql_database_name");
 
 if(!$db)
 {
