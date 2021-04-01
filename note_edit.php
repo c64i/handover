@@ -1,21 +1,21 @@
 <?php
 
-include "dbConnxx.php"; // Using database connection file here
+include "dbConnxx.php"; // connect to database
 
 $id = $_GET['id']; // get id through query string
 
-$qry = mysqli_query($db,"select * from hdupdates.notes where id='$id'"); // select query
+$qry = mysqli_query($db,"select * from hdupdates.notes where id='$id'"); // select * query
 
 $data = mysqli_fetch_array($qry); // fetch data
 
-if(isset($_POST['update'])) // when click on Update button
+if(isset($_POST['update'])) // update on button click
 {
     $notes = $_POST['notes'];
     $edit = mysqli_query($db,"update hdupdates.notes set notes='$notes' where id='$id'");
     if($edit)
     {
-        mysqli_close($db); // Close connection
-        header("location:hdupdates.php"); // redirects to all records page
+        mysqli_close($db); // close connection
+        header("location:hdupdates.php"); // return to updates page
         exit;
     }
     else
