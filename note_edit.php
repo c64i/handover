@@ -27,7 +27,7 @@ if(isset($_POST['update'])) // update on button click
 <html>
 <head>
 <title>Helpdesk Updates</title>
-<link rel="stylesheet" href="hdu.css">
+<link rel="stylesheet" href="css/hdu.css">
  <meta name="description" content="Minimalistic service helpdesk updates." />
  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
