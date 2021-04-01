@@ -6,6 +6,8 @@ The database is formatted as two tables names 'updates' and 'notes'
 
 updates                         notes
 
- id     | name   | number |    | id    | note                      
- 1      | Test   |     123|    | 1     | This is a note            
+ id|name|number               
+ 1|Test|123           
 
+id| note                      
+1| This is a note 
